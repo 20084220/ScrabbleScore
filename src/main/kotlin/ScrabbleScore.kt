@@ -2,7 +2,9 @@ class ScrabbleScore {
 
     fun scoreWord(word: String): Int{
         //TODO calculate using the scoreLetter method below, the scrabble value of the word passed as a parameter
-
+        var num:Int =0
+        word.forEach { num+=scoreLetter(it) }
+        return num
     }
 
     //TODO the program if the user enters in any chars other than capital letters...try fix this.
